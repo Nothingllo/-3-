@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Haos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./js/slider.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./js/slider.css">
+    <link rel="stylesheet" href="./adaptive.css">
+    <script src="./js/slider.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="header__nav">
+            <a href="#" class="logo" id="logo"><img src="./photo/logo.png" alt=""></a>
+            <ul class="menu">
+                <li><a class="menuItem" href="#">Услуги</a></li>
+                <li><a class="menuItem" href="#">О компании</a></li>
+                <li><a class="menuItem" href="#">Портфолио</a></li>
+                <li><a class="menuItem" href="#">Вопрос-ответ</a></li>
+                <li><a class="menuItem" href="#">Контакты</a></li>
+                <li class="button_header">
+                    <a class="menuItem" href="#">
+                        <button>
+                            <img src="./photo/icon 1.png" alt="">
+                            Заявка на замер
+                        </button>
+                    </a>
+                    <a class="menuItem" href="#">
+                        <button>
+                            <img src="./photo/icon 2.png" alt="">
+                            Заказать расчет
+                        </button>
+                    </a>
+                </li>
+            </ul>
+            <button class="hamburger">
+                <i class="menuIcon material-icons">≡</i>
+                <i class="closeIcon material-icons">×</i>
+            </button>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="banner-container">
+            <div class="banner-container_text">
+                <h2>Окна Хаус -</h2>
+                <h1>Профессиональный подход к остеклению</h1>
+                <div class="banner-container_text_type">
+                    <div>
+                        <img src="./photo/icons 1.png" alt="">
+                        <p>Современные окна <br> и балконные конструкции <br> по доступным ценам</p>
+                    </div>
+                    <div>
+                        <img src="./photo/icons 2.png" alt="">
+                        <p>Квалифицированный <br> подход к решению задач <br> любой сложности</p>
+                    </div>
+                    <div>
+                        <img src="./photo/icons 3.png" alt="">
+                        <p>Гарантия <br> высочайшего качества <br> нашей продукции</p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-container_form">
+                <h3>Вызвать замершика на дом</h3>
+                <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+                <input type="number" name="number" id="number" placeholder="Номер телефона">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <div class="check">
+                    <input type="checkbox" name="yes" id="yes"> <label for="yes">Согласен на обработку персональных
+                        данных
+                        в соответствии с <a href="#">политикой конфиденциальности</a></label>
+                </div>
+                <button>Отправить заявку</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <h4>Наши услуги</h4>
+        <div class="filter">
+            <button class="button button_all" data-filter="all">Все услуги</button>
+            <button class="button button_on" data-filter="on">Установка</button>
+            <button class="button button_off" data-filter="off">Остекление</button>
+        </div>
+        <div class="content">
+            <div class="list">
+                <div class="card on"
+                    style="background-image: url(./photo/1.png); object-fit: cover; background-size: 100% 100%;">
+                    <div class="list_block_text">
+                        <div class="list_block_icons">
+                            <img src="./photo/иконка 1.png" alt="">
+                            <h2>Установка <br> пластиковых окон</h2>
+                        </div>
+                        <p>Устанавливаем пластиковые окна <br> Rehau от проверенного производителя <br> с гарантией
+                            качества
+                        </p>
+                    </div>
+                </div>
+                <div class="card off"
+                    style="background-image: url(./photo/2.png); object-fit: cover; background-size: 100% 100%;">
+                    <div class="list_block_text">
+                        <div class="list_block_icons">
+                            <img src="./photo/иконка 2.png" alt="">
+                            <h2>Остекление балконов <br> и лоджий</h2>
+                        </div>
+                        <p>Занимаемся остеклением и отделкой <br> балконов и лоджий. Теплое и холодное <br> остекление,
+                            изготовление выносов и <br> крыш. Беремся за сложные объекты</p>
+                    </div>
+                </div>
+                <div class="card off"
+                    style="background-image: url(./photo/3.png); object-fit: cover; background-size: 100% 100%;">
+                    <div class="list_block_text">
+                        <div class="list_block_icons">
+                            <img src="./photo/иконка 3.png" alt="">
+                            <h2>Остекление <br> коттеджей и дач</h2>
+                        </div>
+                        <p>Остекление и отделка под ключ: <br>
+                            от коттеджей и дач до террас <br>
+                            и беседок. Выделяем личного <br>
+                            технолога под каждый объект</p>
+                    </div>
+                </div>
+                <div class="card off"
+                    style="background-image: url(./photo/4.png); object-fit: cover; background-size: 100% 100%;">
+                    <div class="list_block_text">
+                        <div class="list_block_icons">
+                            <img src="./photo/иконка 4.png" alt="">
+                            <h2>Остекление <br> корпоративных объектов
+                            </h2>
+                        </div>
+                        <p>Реализуем сложные проекты <br>
+                            по остеклению торговых центров, <br>
+                            ресторанов, производственных помещений <br>
+                            и офисов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabular">
+        <div class="tab-container">
+            <div>
+                <h4>О компании</h4>
+            </div>
+            <div class="tab" id="tab-1">
+                <div class="tab-nav">
+                    <button type="button" class="tab-btn tab-btn-active" data-target-id="0">
+                        <div class="button-block">Описание</div>
+                    </button>
+                    <button type="button" class="tab-btn" data-target-id="1">
+                        <div class="button-block">Как мы работаем</div>
+                    </button>
+                    <button type="button" class="tab-btn" data-target-id="2">
+                        <div class="button-block">Отзыв</div>
+                    </button>
+                    <button type="button" class="tab-btn" data-target-id="3">
+                        <div class="button-block">Сертификаты</div>
+                    </button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane tab-pane-show" data-id="0">
+                        <div class="tab_description">
+                            <div class="tab_description_first">
+                                <p>Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и
+                                    его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому
+                                    для нас очень важно, чтобы Вы сделали правильный выбор.</p>
+                                <img src="./photo/окна-видео.png" alt="">
+                            </div>
+                            <div class="tab_description_second">
+                                <div class="tab_description_second_block">
+                                    <img src="./photo/проф.png" alt="">
+                                    <div class="tab_description_second_block_text">
+                                        <h5>ПРОФЕССИОНАЛИЗМ</h5>
+                                        <p>Бригада профессиональных
+                                            мастеров по монтажу
+                                            и обслуживанию</p>
+                                    </div>
+                                </div>
+                                <div class="tab_description_second_block">
+                                    <img src="./photo/ценообразование.png" alt="">
+                                    <div class="tab_description_second_block_text">
+                                        <h5>ЦЕНООБРАЗОВАНИЕ</h5>
+                                        <p>Лучшие цены на рынке
+                                            пластиковых окон</p>
+                                    </div>
+                                </div>
+                                <div class="tab_description_second_block">
+                                    <img src="./photo/договор.png" alt="">
+                                    <div class="tab_description_second_block_text">
+                                        <h5>МОБИЛЬНОСТЬ</h5>
+                                        <p>Заключение договора
+                                            на дому</p>
+                                    </div>
+                                </div>
+                                <div class="tab_description_second_block">
+                                    <img src="./photo/лояльность.png" alt="">
+                                    <div class="tab_description_second_block_text">
+                                        <h5>ЛОЯЛЬНОСТЬ</h5>
+                                        <p>99% клиентов рекомендуют
+                                            нас своим друзьям</p>
+                                    </div>
+                                </div>
+                                <div class="tab_description_second_block">
+                                    <img src="./photo/скорость.png" alt="">
+                                    <div class="tab_description_second_block_text">
+                                        <h5>СКОРОСТЬ</h5>
+                                        <p>Короткие сроки
+                                            установки изделий</p>
+                                    </div>
+                                </div>
+                                <div class="tab_description_second_block">
+                                    <img src="./photo/служба качества.png" alt="">
+                                    <div class="tab_description_second_block_text">
+                                        <h5>СЛУЖБА КАЧЕСТВА</h5>
+                                        <p>Безупречное качество
+                                            и контроль изделий ПВХ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>
+                                <img src="./photo/icon 1.png" alt="">
+                                Оформить заявку на замер
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tab-pane" data-id="1">
+                        <div class="tab_work-content">
+                            <h4>Как мы работаем</h4>
+                            <div class="tab_work">
+                                <div class="tab_work_block">
+                                    <img src="./photo/БЕСПЛАТНО.png" alt="">
+                                    <div class="tab_work_block_text">
+                                        <h5>БЕСПЛАТНО ПРИЕДЕМ</h5>
+                                        <p>Выезжаем бесплатно во все
+                                            города Московской области</p>
+                                    </div>
+                                </div>
+                                <div class="tab_work_block">
+                                    <img src="./photo/ЕЖЕДЕВНО.png" alt="">
+                                    <div class="tab_work_block_text">
+                                        <h5>ВЫЕЗЖАЕМ ЕЖЕДНЕВНО</h5>
+                                        <p>С 9 до 21 без выходных
+                                            и праздников</p>
+                                    </div>
+                                </div>
+                                <div class="tab_work_block">
+                                    <img src="./photo/ОБРАЗЦЫ.png" alt="">
+                                    <div class="tab_work_block_text">
+                                        <h5>ОБРАЗЦЫ С СОБОЙ</h5>
+                                        <p>Покажем образцы профильных
+                                            систем и материалов отделки</p>
+                                    </div>
+                                </div>
+                                <div class="tab_work_block">
+                                    <img src="./photo/СТОИМОСТЬ.png" alt="">
+                                    <div class="tab_work_block_text">
+                                        <h5>СТОИМОСТЬ</h5>
+                                        <p>Называем точную стоимость
+                                            заказа на месте</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" data-id="2">
+                        <div class="comment-block">
+                            <div class="comment-block_text">
+                                <h5>Раиса Михайлова</h5>
+                                <h6>24.06.2021 Договор №123456</h6>
+                            </div>
+                            <div class="comment-block_comment">
+                                <p>Огромное СПАСИБО всей команде Дизайн-Окно! В июне 2021 заказывала
+                                    переостекление + отделка балкона первый раз и так все удачно -
+                                    быстро, качественно. Все прошло отлично, в соответствии с
+                                    условиями договора. Замерщик приехал как оговорено без
+                                    опозданий, произвел замер лазерным уровнем, все подробно
+                                    рассказал по профилю и комплектующим. Предоплата составила 20%,
+                                    остаток - по факту. Соотношение цена/качество в сравнении с
+                                    конкурентами. Доставка точно в срок, за 3 дня все установили.
+                                    Итог - красивые окна. Будем зимой проверять на прочность :) </p>
+
+                                <p>Большая благодарность за отлично проведённую работу! Замерщик по
+                                    вызову пришёл быстро, всё хорошо объяснил , окна пришли в
+                                    соответствии со согласованной датой, поднятие в квартиру прошла
+                                    очень хорошо , монтажники справились со своей работой на
+                                    отлично! Все прошло в позитиве, соотношение цены и качества
+                                    хорошее. Отличная команда! Спасибо!!!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" data-id="3">
+                        <div class="doc-tab">
+                            <img src="./photo/doc 1.png" alt="">
+                            <img src="./photo/doc 2.png" alt="">
+                            <img src="./photo/doc 3.png" alt="">
+                            <img src="./photo/doc 4.png" alt="">
+                            <img src="./photo/doc 5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <h4>Портфолио</h4>
+        <div class="container">
+            <div class="itc-slider" data-slider="itc-slider" data-loop="false">
+                <div class="itc-slider-wrapper">
+                    <div class="itc-slider-items">
+                        <div class="itc-slider-item">
+                            <!-- Контент 1 слайда -->
+                            <img src="./photo/win 1.png" alt="">
+                        </div>
+                        <div class="itc-slider-item">
+                            <!-- Контент 2 слайда -->
+                            <img src="./photo/win 2.png" alt="">
+                        </div>
+                        <div class="itc-slider-item">
+                            <!-- Контент 3 слайда -->
+                            <img src="./photo/win 3.png" alt="">
+                        </div>
+                        <div class="itc-slider-item">
+                            <!-- Контент 4 слайда -->
+                            <img src="./photo/win 4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                <button class="itc-slider-btn itc-slider-btn-next"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-accordion">
+        <div class="content-accordion_conteiner">
+            <div>
+                <h4>Вопрос-ответ</h4>
+            </div>
+            <div class="accordion" id="accordion-1">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        Сколько по времени занимает изготовление пластиковых окон?
+                    </div>
+                    <div class="accordion__body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut
+                        consequuntur
+                        iure magni
+                        tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta
+                        amet.
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        Какие существуют способы оплаты?
+                    </div>
+                    <div class="accordion__body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut
+                        consequuntur
+                        iure magni
+                        tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta
+                        amet.
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        Где я могу посмотреть образцы?
+                    </div>
+                    <div class="accordion__body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut
+                        consequuntur
+                        iure magni
+                        tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta
+                        amet.
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        Зачем вызывать замерщика? Я могу дать размеры
+                    </div>
+                    <div class="accordion__body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut
+                        consequuntur
+                        iure magni
+                        tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta
+                        amet.
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        Хотелось бы отделать балкон. Поможете?
+                    </div>
+                    <div class="accordion__body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut
+                        consequuntur
+                        iure magni
+                        tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta
+                        amet.
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        Мне надо нанимать грузчиков для подъема?
+                    </div>
+                    <div class="accordion__body">
+                        Нет, команда мастеров все сами аккуратно доставят и внесут.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts">
+        <div class="contacts-container">
+            <h4>Контакты</h4>
+            <div class="contacts-block">
+                <div class="contacts-block_talk">
+                    <div class="contacts-block_talk-con">
+                        <h5>Бесплатная консультация:</h5>
+                        <div class="contacts-block_talk_page">
+                            <img src="./photo/телефон.png" alt="">
+                            <p>8 (4932) 34 - 31 - 40       8 (905) 109 - 31 - 40</p>
+                        </div>
+                        <div class="contacts-block_talk_page">
+                            <img src="./photo/место.png" alt="">
+                            <p>г. Иваново, ул. Генерала Хлебникова, д.54, оф.303</p>
+                        </div>
+                        <div class="contacts-block_talk_page">
+                            <img src="./photo/почта.png" alt="">
+                            <p>okna@haus.ru</p>
+                        </div>
+                    </div>
+                    <div class="contacts-block_text">
+                        <p>
+                            Установку должны  <br> выполнять только эксперты. <br> Нам доверяют сотни семей. <br>
+                            Узнайте поробнее, какие <br> решения вам подходят. <br>
+                            Вы можете приобрести <br> недорогие товары <br>
+                            при гарантированно <br>
+                            высоком качестве.
+                        </p>
+                        <img src="./photo/соц сети 1.png" alt="">
+                    </div>
+                </div>
+                <div class="contacts-block_quations">
+                    <h4>Остались вопросы?</h4>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Ваш отзыв" class="com">
+                    <div class="check">
+                        <input type="checkbox" name="yes" id="yes"> <label for="yes">Я согласен(на) на обработку <a href="#">персональных данных</a></label>
+                    </div>
+                    <button type="submit">Отправить сообщение</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-container_icon">
+                <img src="./photo/logo footer.png" alt="">
+                <p>© ООО “Окна Хаус”, 2011 - 2022</p>
+            </div>
+            <div class="footer-container_icon">
+                <p>Политика кофиденциальности</p>
+                <p>Пользовательское соглашение</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookies" id="cookies">
+        <div class="cookies__descr">
+            Этот сайт использует файлы cookie для хранения данных. Продолжая использовать сайт, вы даете свое согласие на работу с этими файлами.
+        </div>
+        <div class="cookies__btn" id="cookies__btn">Хорошо, принимаю</div>
+    </div>
+
+
+    <script src="./js/acardion.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/tab.js"></script>
+</body>
+
+</html>
